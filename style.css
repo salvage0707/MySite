@@ -100,7 +100,6 @@ header {
 	width: 100%;
 	background-color: #eceff1;
 }
-
 .portfolio-box {
 	width: 920px;
 }
@@ -120,7 +119,6 @@ header {
 .portfolio-images:nth-child(3n) {
 	margin-right: 0; /*3の倍数のimageの右を０に変更*/
 }
-
 .portfolio-images:nth-child(1) {
 	background-image: url(img/sketch.jpg);
 }
@@ -168,6 +166,45 @@ header {
 	padding: 10px;
 }
 
+/*プロフィール*/
+.profile {
+	width: 100%;
+	background-color: #eceff1;
+}
+
+.profile-box {
+	width: 1024px;
+}
+
+.profile-image-box {
+	width: 512px;
+	float: left;
+}
+.profile-image {
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+}
+
+.profile-text-box {
+	width: 512px;
+	float: left;
+	text-align: left;
+}
+
+.my-name-box {
+	margin-bottom: 8px;
+}
+
+.my-name, .my-skills {
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+
+.my-name-text, .my-skills-text {
+	font-size: 16px;
+	color: #000000;
+}
 
 
 
