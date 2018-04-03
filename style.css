@@ -4,6 +4,13 @@
 	box-sizing: border-box;
 }
 
+@media all and (max-width: 767px) {
+	header, footer, .contents {
+		width: 90%;
+		margin: 0 5%;
+	}
+}
+
 /*clearfix*/
 .clearfix::after {
 	content: "";
