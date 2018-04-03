@@ -176,6 +176,7 @@ header {
 	width: 1024px;
 }
 
+/*プロフィール画像*/
 .profile-image-box {
 	width: 512px;
 	float: left;
@@ -186,6 +187,7 @@ header {
 	border-radius: 50%;
 }
 
+/*プロフィールテキスト*/
 .profile-text-box {
 	width: 512px;
 	float: left;
@@ -206,6 +208,45 @@ header {
 	color: #000000;
 }
 
+/*コンタクト*/
+.contact-box {
+	width: 800px;
+}
+
+/*インフォメーション*/
+.info-box, .sns-box {
+	width: 400px;
+	float: left;
+}
+
+.info-small-box, .sns-small-box {
+	display: inline-block;
+	margin: 0 auto;
+	text-align: left;
+}
+
+.info-box {
+	margin-bottom: 20px;
+}
+
+.mail, .tell, .sns {
+	font-size: 20px;
+	margin-bottom: 5px;
+	display: block;
+}
+
+.mail-address, .tell-number {
+	border-bottom: 2px solid #000000;
+	display: inline-block;
+}
+
+/*SNSアイコン*/
+.contact-icons {
+	font-size: 50px;
+}
+.contact-icons:nth-child(2) {
+	margin: 0 20px;
+}
 
 
 
