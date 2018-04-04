@@ -49,6 +49,22 @@ header {
 	margin: 0 30px;
 }
 
+/*ハンバーガーメニュー*/
+@media all and (max-width: 768px;) {
+	.header-nav {
+		display: none; /* 元のナビバーを非表示に　*/
+	}
+
+	.header-hamburger-box {
+		display: inline-block;
+		float: right;
+	}
+
+	.nav-unshown {
+		display: none;
+	}
+}
+
 /*メインビジュアル*/
 .main-visual {
 	width: 100%;
