@@ -4,13 +4,6 @@
 	box-sizing: border-box;
 }
 
-@media all and (max-width: 767px) {
-	header, footer, .contents {
-		width: 90%;
-		margin: 0 5%;
-	}
-}
-
 /*clearfix*/
 .clearfix::after {
 	content: "";
@@ -29,6 +22,15 @@ header {
 	width: 1024px;
 	margin: 0 auto;
 }
+@media all and (max-width: 768px) {
+	header {
+		height: 50px;
+	}
+	.header-box {
+		width: 90%;
+	}
+}
+
 
 .logo-image {
 	height: 70px;
@@ -71,7 +73,14 @@ header {
 	height: 650px;
 	background-image: url(img/mv.png);
 	background-position: center;
+	background-size: cover;
 	text-align: center;
+}
+@media all and (max-width: 768px) {
+	.main-visual {
+		height: 750px;
+		background-image: url(img/code.png);
+	}
 }
 
 .main-visual-box {
@@ -82,10 +91,21 @@ header {
 	font-size: 64px;
 	color: #fafafa;
 }
+@media all and (max-width: 768px) {
+	.main-visual-box h2 {
+		font-size: 40px;
+		margin-bottom: 10px;
+	}
+}
 
 .main-visual-text {
 	font-size: 20px;
 	color: #fafafa;
+}
+@media all and (max-width: 768px) {
+	.main-visual-text {
+		font-size: 18px;
+	}
 }
 
 /*共通使用CSS*/
@@ -98,6 +118,7 @@ header {
 	color: #000000;
 	display: inline-block;
 	padding-bottom: 8px;
+	font-family:               /* ここに書体の記述*/;
 }
 
 .content-title-solid {
@@ -117,6 +138,7 @@ header {
 	padding: 90px 0;
 	text-align: center;
 }
+
 
 /*ポートフォリオ*/
 .portfolio {
@@ -161,18 +183,37 @@ header {
 	background-image: url(img/webcamp-mother.png);
 }
 
+@media all and (max-width: 768px) {
+	.portfolio-images {
+		width: 100%;
+	}
+	.portfolio-images:nth-child(odd) {
+		display: none; /* 奇数番目の画像を非表示*/
+	}
+	.portfolio-images:nth-child(-n+4) {
+		margin-bottom: 10px;
+	}
+}
+
 /*フィーチャー*/
 .feature-box {
 	width: 980px;
 }
 
-.feature-contet {
+.feature-content {
 	width: 320px;
 	float: left;
 	text-align: left;
 }
 .feature-contet:nth-child(2) {
 	margin: 0 10px;
+}
+@media all and (max-width: 768px) {
+	.feature-content {
+		width: 100%;
+		margin: 0 0 10px;
+		float: none;
+	}
 }
 
 .icon-box {
@@ -209,6 +250,13 @@ header {
 	height: 250px;
 	border-radius: 50%;
 }
+@media all and (max-width: 768px) {
+	.profile-image-box {
+		width: 100%;
+		float: none;
+		margin-bottom: 20px;
+	}
+}
 
 /*プロフィールテキスト*/
 .profile-text-box {
@@ -216,9 +264,21 @@ header {
 	float: left;
 	text-align: left;
 }
+@media all and (max-width: 768px) {
+	.profile-text-box {
+		width: 100%;
+		float: none;
+		text-align: center;
+	}
+}
 
 .my-name-box {
 	margin-bottom: 8px;
+}
+@media all and (max-width: 768px) {
+	.my-name-box {
+		margin-bottom: 20px;
+	}
 }
 
 .my-name, .my-skills {
@@ -242,14 +302,25 @@ header {
 	float: left;
 }
 
+.info-box {
+	margin-bottom: 20px;
+}
+
 .info-small-box, .sns-small-box {
 	display: inline-block;
 	margin: 0 auto;
 	text-align: left;
 }
+@media all and (max-width: 768px) {
+	.info-small-box, .sns-small-box {
+		text-align: center;
+	}
+}
 
-.info-box {
-	margin-bottom: 20px;
+@media all and (max-width: 768px) {
+	.item-mail-box, .item-tell-box {
+		margin-bottom: 20px;
+	}
 }
 
 .mail, .tell, .sns {
@@ -259,9 +330,11 @@ header {
 }
 
 .mail-address, .tell-number {
-	border-bottom: 2px solid #000000;
+	border-bottom: 1px solid #000000;
 	display: inline-block;
+	line-height: 0.9;
 }
+
 
 /*SNSアイコン*/
 .contact-icons {
@@ -269,6 +342,11 @@ header {
 }
 .contact-icons:nth-child(2) {
 	margin: 0 20px;
+}
+@media all and (max-width: 768px) {
+	.contact-icons:nth-child(2) {
+		margin: 0 8px;
+	}
 }
 
 /*フッター*/
@@ -284,6 +362,23 @@ footer {
 	color: #fafafa;
 	line-height: 60px;
 }
+
+/*レスポンシブ共通css*/
+@media all and (max-width: 768px) {
+	.content-box {
+		width: 90%;
+	}
+
+	.content-text {
+		font-size: 18px;
+	}
+}
+
+
+
+
+
+
 
 
 
