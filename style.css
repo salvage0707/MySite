@@ -35,6 +35,11 @@ header {
 .logo-image {
 	height: 70px;
 }
+@media all and (max-width: 768px) {
+	.logo-image {
+		height: 50px;
+	}
+}
 
 /*ヘッダーのナビゲーションバー*/
 .header-nav {
@@ -51,8 +56,16 @@ header {
 	margin: 0 30px;
 }
 
-/*ハンバーガーメニュー*/
-@media all and (max-width: 768px;) {
+.header-hamburger-box {
+	display: none;
+}
+
+/*レスポンシブハンバーガーメニュー*/
+@media all and (max-width: 768px) {
+	.header-box {
+		position: relative;
+	}
+
 	.header-nav {
 		display: none; /* 元のナビバーを非表示に　*/
 	}
@@ -65,6 +78,64 @@ header {
 	.nav-unshown {
 		display: none;
 	}
+
+	.nav-open {
+		position: absolute;
+		top: 3px;
+		right: 8px;
+		display: inline-block;
+		width: 44px;
+		height: 44px;
+		border: 2px solid #ffffff;
+	}
+	.nav-open span, .nav-open span:before, .nav-open span:after {
+		position: absolute;
+		width: 30px;
+		height: 2px;
+		background: #fff;
+		content: "";
+		display: block;
+	}
+	.nav-open span {
+		margin: 19px 0 0 5px;
+	}
+	.nav-open span:before {
+		bottom: 10px;
+	}
+	.nav-open span:after {
+		bottom: -10px;
+	}
+
+
+
+	.header-hamburger {
+		overflow: auto;
+		position: fixed;
+		top: -50px;
+		left: 0;
+		z-index: 9999;
+		width: 100%;
+		background-color: #fff;
+		transition: .3s ease-in-out;
+		transform: translateY(-200%);
+		margin-top: 99px;
+	}
+
+	.header-hamburger-item {
+		text-align: center;
+		display: block;
+		margin: 20px auto;
+		font-size: 30px;
+
+	}
+
+	#nav-input:checked ~ .header-hamburger { /*中身を表示*/
+		transform: translateY(0%);
+		opacity: .8;
+		display: block;
+		box-shadow: 6px 0 25px rgba(0,0,0,.15);
+	}
+
 }
 
 /*メインビジュアル*/
