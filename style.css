@@ -11,6 +11,14 @@
 	clear: both;
 }
 
+/*ボディー*/
+@media all and (max-width: 768px) {
+	body {
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+
 /*ヘッダー*/
 header {
 	width: 100%;
@@ -256,7 +264,10 @@ header {
 
 @media all and (max-width: 768px) {
 	.portfolio-images {
-		width: 100%;
+		width: 300px;
+		height: 250px;
+		float: none;
+		margin: 0 auto;
 	}
 	.portfolio-images:nth-child(odd) {
 		display: none; /* 奇数番目の画像を非表示*/
@@ -264,6 +275,9 @@ header {
 	.portfolio-images:nth-child(-n+4) {
 		margin-bottom: 10px;
 	}
+	.portfolio-images:nth-child(3n) {
+	margin-right: auto; /*3の倍数のimageの右をautoに変更*/
+}
 }
 
 /*フィーチャー*/
@@ -275,14 +289,16 @@ header {
 	width: 320px;
 	float: left;
 	text-align: left;
+	font-size: 16px;
 }
 .feature-contet:nth-child(2) {
 	margin: 0 10px;
 }
 @media all and (max-width: 768px) {
 	.feature-content {
-		width: 100%;
-		margin: 0 0 10px;
+		width: 320px;
+		height: auto;
+		margin: 0 auto 10px;
 		float: none;
 	}
 }
@@ -385,6 +401,9 @@ header {
 @media all and (max-width: 768px) {
 	.info-small-box, .sns-small-box {
 		text-align: center;
+	}
+	.info-box, .sns-box {
+		width: 100%;
 	}
 }
 
